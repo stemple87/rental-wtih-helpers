@@ -1,0 +1,9 @@
+<h1>Welcome to the Announcement Page</h1>
+
+<ul>
+  {{#each model as |announcement|}}
+     <li>{{announcement.From}}'s report is priority level {{announcement.Priority}} with type of {{announcement.Type}}</li>
+  {{/each}}
+</ul>
+
+{{#link-to 'index'}}Return to home.{{/link-to}}
