@@ -1,10 +1,14 @@
+<!-- rental=rental is using rental-tile.hbs which contains VV
+
+<li>{{rental.owner}}'s {{rental.type}} in {{rental.city}}</li> -->
+
 <h1> Welcome to Super Rentals </h1>
 
 We hope you find exactly what you're looking for in a place to stay.
 
 <ul>
   {{#each model as |rental|}}
-     <li>{{rental.owner}}'s {{rental.type}} in {{rental.city}}</li>
+     {{rental-tile rental=rental}}
   {{/each}}
 </ul>
 
