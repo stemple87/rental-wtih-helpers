@@ -1,13 +1,17 @@
 import Ember from 'ember';
 
   var announcements = [{
-    "From" : "Local People",
-    "Priority" : "Low",
-    "Type" : "Weather"
+    "message" : "Big News!",
+    "priority" : "Low",
+    "type" : "Weather"
   }, {
-    "From" : "News Stations",
-    "Priority" : "High",
-    "Type" : "Politics"
+    "message" : "This just in!",
+    "priority" : "High",
+    "type" : "Politics"
+  }, {
+    "message": "Michael Jordan to return to Chicago Bulls 2017",
+    "priority": "Very Low",
+    "type": "Sports"
   }];
 
 export default Ember.Route.extend({
