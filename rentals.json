@@ -31,6 +31,13 @@
     "message": "Michael Jordan to return to Chicago Bulls 2017",
     "priority": "Very Low",
     "type": "Sports"
-  }]
+    }],
+    "cities": [{
+      "name": "Portland",
+      "country": "USA"
+    }, {
+      "name": "Seattle",
+      "country": "USA"
+    }]
 
 }
