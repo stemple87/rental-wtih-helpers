@@ -15,7 +15,7 @@ export default Ember.Component.extend({
         bedrooms: this.get('bedrooms'),
       };
       this.set('updateRentalForm', false);
-      this.sendAction('luke', rental, params);
+      this.sendAction('update', rental, params);
     }
   }
 });
