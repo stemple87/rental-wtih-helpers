@@ -4,17 +4,19 @@ export default Ember.Route.extend({
   model(params) {
     return this.store.findRecord('city', params.city_id);
   },
-  save3(params) {
-    var newRental = this.store.createRecord('rental', params);
-    var city = params.city;
-    city.get('rentals').addObject(newRental);
-    newRental.save().then(function() {
-      return city.save();
-    });
-    this.transitionTo('city', params.city);
-  },
-  destroyCity(city) {
-    city.destroyRecord();
-    this.transitionTo('index');
+    actions: {
+      save3(params) {
+      var newRental = this.store.createRecord('rental', params);
+      var city = params.city;
+      city.get('rentals').addObject(newRental);
+      newRental.save().then(function() {
+        return city.save();
+      });
+      this.transitionTo('city', params.city);
+    },
+    destroyCity(city) {
+      city.destroyRecord();
+      this.transitionTo('index');
+    }
   }
 });
