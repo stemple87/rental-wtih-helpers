@@ -1,30 +1,27 @@
-<!-- rental=rental is using rental-tile.hbs which contains VV
-
-<li>{{rental.owner}}'s {{rental.type}} in {{rental.city}}</li> -->
 <h1> Welcome to Super Rentals </h1>
 
 We hope you find exactly what you're looking for in a place to stay.
 
+<h2> Available Rentals </h2>
+
 <ul>
   {{#each model.rentals as |rental|}}
-     {{rental-tile rental=rental}}
+    {{rental-tile rental=rental}}
   {{/each}}
 </ul>
 
-{{new-rental rentalToSave="rentalSave"}}
 
 <h2> Cities </h2>
 
 <ul>
   {{#each model.cities as |city|}}
-    <li>{{city.name}}</li>
+    <li>{{#link-to 'city' city.id}}{{city.name}}{{/link-to}}</li>
   {{/each}}
 </ul>
 
-  {{new-city cityToSave="citySave"}}
+{{new-city saveCity="saveCity"}}
 
 <hr>
 
 {{#link-to 'about'}}About{{/link-to}}
 {{#link-to 'contact'}}Click here to contact us.{{/link-to}}
-{{#link-to 'announcement'}}Click here to visit important messages.{{/link-to}}
