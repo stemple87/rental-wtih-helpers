@@ -12,7 +12,6 @@ export default Ember.Route.extend({
       newRental.save().then(function() {
         return city.save();
       });
-      console.log(params.city);
       this.transitionTo('city', params.city);
     },
     destroyCity(city) {
