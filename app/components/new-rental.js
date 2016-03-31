@@ -7,7 +7,7 @@ export default Ember.Component.extend({
       this.set('addNewRental', true);
     },
 
-    newRentalMethod() {
+    save1() {
       var params = {
         owner: this.get('owner'),
         city: this.get('city'),
@@ -21,7 +21,7 @@ export default Ember.Component.extend({
       this.set('type', '');
       this.set('image', '');
       this.set('bedrooms', '');
-      this.sendAction('rentalToSave', params);
+      this.sendAction('save2', params);
     }
   }
 });
