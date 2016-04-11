@@ -1,7 +1,30 @@
-# Super-rentals
+# _Super Rental Site with updates_
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+#### _This is an update to the Rental site_
+
+#### By _**Simon Temple**_
+
+## Description
+
+_This is our first utilization of helpers in ember. We are using them to display gliphcons if certain conditions are met._
+
+## Known Bugs
+
+_None known_
+
+## Support and contact details
+
+_You can contact me at simonctemple@live.com or at my github profile https://github.com/stemple87_
+
+## Technologies Used
+
+_This app is made using Ember and Node.js_
+
+### License
+
+
+Copyright (c) 2015 **_Simon Temple_**
+
 
 ## Prerequisites
 
